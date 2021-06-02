@@ -1,0 +1,2 @@
+rootProject.name = "number-picker"
+include ':library'
