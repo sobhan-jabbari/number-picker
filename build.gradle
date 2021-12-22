@@ -2,16 +2,16 @@ apply plugin: 'com.android.library'
 
 ext {
     appName = 'number-picker'
-    appVersionCode = 1123
-    appVersionName = '1.1.23'
+    appVersionCode = 1124
+    appVersionName = '1.1.24'
 }
 
 android {
-    compileSdkVersion 30
+   // compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 17
-        targetSdkVersion 30
+       // targetSdkVersion 30
         versionCode appVersionCode
         versionName appVersionName
     }
@@ -19,14 +19,12 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            useProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             debuggable false
         }
 
         debug {
             minifyEnabled false
-            useProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             debuggable false
         }
@@ -58,7 +56,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
 
 }
 
