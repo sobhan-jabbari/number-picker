@@ -2,8 +2,8 @@ apply plugin: 'com.android.library'
 
 ext {
     appName = 'number-picker'
-    appVersionCode = 1124
-    appVersionName = '1.1.24'
+    appVersionCode = 1125
+    appVersionName = '1.1.25'
 }
 
 android {
